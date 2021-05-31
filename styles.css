@@ -1,11 +1,12 @@
 /* We'll eventually replace this css, but this gives us some styles for lesson 1 */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap");
 
 :root {
   /* Colors */
-  --primary: #0091ea;
-  --primary-light: #7bbde6;
-  --accent: #546e7a;
-  --grey: #445;
+  --primary: #f2e8f1;
+  --primary-light: #f2e8f1;
+  --accent: #a6b0c5;
+  --grey: #7a98ab;
   --error: #f52;
   --background: #f5f5f6;
   --background-accent: #cfe5f2;
@@ -40,7 +41,7 @@ body,
 /* ------------------------------------------------------------------------ */
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 14px;
   background-color: var(--primary);
   height: 100vh;
@@ -56,12 +57,47 @@ h1 {
   margin: var(--space-md) 0;
 }
 
+h2 {
+  color: var(--primary);
+  font-weight: 700;
+}
+
 section,
-header {
+header,
+form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+form {
+  gap: 10px;
+  padding: 10px;
+  width: 350px;
+}
+
+.form-container {
+  background-color: var(--accent);
+  border-radius: 8px;
+  padding: 30px 10px;
+  width: 500px;
+  margin: 0 auto;
+}
+
+form input,
+form button {
+  padding: 0.3rem;
+  border-radius: 4px;
+  width: 100%;
+  border: 1px solid #cecece;
+}
+
+form button {
+  color: var(--border);
+  font-weight: 700;
+  font-size: 15px;
+  background-color: var(--primary-light);
 }
 
 header {
